@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ClaimSketch — AI Insurance Claim Submission</title>
+  <meta name="description" content="ClaimSketch: AI-powered insurance claim submission portal — fast, secure, and accurate claim intake." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="assets/logo.png" alt="ClaimSketch logo" class="brand-logo" />
+      </a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#security">Security</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-outline" href="#get-started">Get started</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="hero-kicker">AI-powered • Secure • Fast</div>
+          <h1>ClaimSketch</h1>
+          <p class="subtitle">Submit insurance claims in minutes. Our AI extracts the details, validates documentation, and speeds up approvals — securely.</p>
+
+          <p class="hero-ctas">
+            <a class="btn primary" href="#get-started">Get started</a>
+            <a class="btn ghost" href="#features">See features</a>
+          </p>
+
+          <ul class="feature-list">
+            <li>AI extraction from images & documents</li>
+            <li>Automated validation & routing</li>
+            <li>Encrypted storage & audit logs</li>
+          </ul>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <div class="device-mock">
+            <img src="assets/screen.png" alt="ClaimSketch app preview" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container cards-grid">
+        <article class="card">
+          <h3>Smart extraction</h3>
+          <p>AI reads receipts, photos and forms to populate claims automatically, cutting manual entry by up to 80%.</p>
+        </article>
+        <article class="card">
+          <h3>Fast submissions</h3>
+          <p>Guided workflows help claimants attach required documents quickly so approvals move faster.</p>
+        </article>
+        <article class="card">
+          <h3>Secure by design</h3>
+          <p>End-to-end encryption, role-based access, and immutable audit logs keep sensitive data protected.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="security" class="section section-dark">
+      <div class="container split">
+        <div>
+          <h2>Security & Compliance</h2>
+          <p>ClaimSketch meets industry standards for data protection and provides granular audit trails for compliance and dispute resolution.</p>
+          <ul>
+            <li>Encryption at rest & in transit</li>
+            <li>RBAC and SSO support</li>
+            <li>Retention and audit controls</li>
+          </ul>
+        </div>
+        <div class="security-visual" aria-hidden="true">
+          <div class="shield">🔒</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-started" class="section">
+      <div class="container contact-pane">
+        <h2>Get started with ClaimSketch</h2>
+        <p>Request a demo or start a free trial.</p>
+
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form" id="contact">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Company email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="Tell us about your claims volume or integration needs"></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Request demo</button>
+            <a class="btn ghost" href="#contact">Contact sales</a>
+          </div>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="foot-left">
+        <img src="assets/logo.png" alt="ClaimSketch logo" class="foot-logo" />
+        <small>© <span id="year"></span> ClaimSketch — AI-driven claims</small>
+      </div>
+      <div class="foot-right">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // small mobile toggle
+    document.querySelector('.mobile-toggle').addEventListener('click', () => {
+      document.querySelector('.nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
